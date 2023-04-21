@@ -6,7 +6,7 @@ Route '/hbnb' displays "HBNB"
 Route 'c/<text>' displays C <text>
 
 """
-from flask import Flask, Markup
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -23,7 +23,8 @@ def hbnb():
 
 @app.route('/c/<text>', strict_slashes=False)
 def display_text(text):
-    return f"C {Markup.escape(text.replace('_', ' '))}"
+    text = text.replace('_', ' ')
+    return f"C %s" % text
 
 
 if __name__ == "__main__":
