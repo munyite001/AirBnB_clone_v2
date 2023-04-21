@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Run flask Web app
 via 0.0.0.0:5000
-Displays "Hello HBNB!" 
+Displays "Hello HBNB!"
 """
 from flask import Flask
 
