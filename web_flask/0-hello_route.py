@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-#   Flask application to display hello flask
+"""Run flask Web app
+via 0.0.0.0:5000
+Displays "Hello HBNB!" 
+"""
 from flask import Flask
+
 app = Flask(__name__)
 
 
